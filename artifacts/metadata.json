@@ -1,0 +1,159 @@
+{
+  "target_col": "bank_account",
+  "positive_label": "Yes",
+  "negative_label": "No",
+  "numeric_features": [
+    "year",
+    "household_size",
+    "age_of_respondent",
+    "urban_with_phone",
+    "is_urban",
+    "has_phone",
+    "is_married"
+  ],
+  "categorical_features": [
+    "country",
+    "location_type",
+    "cellphone_access",
+    "gender_of_respondent",
+    "relationship_with_head",
+    "marital_status",
+    "education_level",
+    "job_type",
+    "age_group",
+    "household_group",
+    "country_has_phone",
+    "year_cat"
+  ],
+  "dropped_high_missing_cols": [],
+  "categories": {
+    "country": [
+      "Rwanda",
+      "Tanzania",
+      "Kenya",
+      "Uganda"
+    ],
+    "location_type": [
+      "Rural",
+      "Urban"
+    ],
+    "cellphone_access": [
+      "Yes",
+      "No"
+    ],
+    "gender_of_respondent": [
+      "Female",
+      "Male"
+    ],
+    "relationship_with_head": [
+      "Head of Household",
+      "Spouse",
+      "Child",
+      "Parent",
+      "Other relative",
+      "Other non-relatives"
+    ],
+    "marital_status": [
+      "Married/Living together",
+      "Single/Never Married",
+      "Widowed",
+      "Divorced/Seperated",
+      "Dont know"
+    ],
+    "education_level": [
+      "Primary education",
+      "No formal education",
+      "Secondary education",
+      "Tertiary education",
+      "Vocational/Specialised training",
+      "Other/Dont know/RTA"
+    ],
+    "job_type": [
+      "Self employed",
+      "Informally employed",
+      "Farming and Fishing",
+      "Remittance Dependent",
+      "Other Income",
+      "Formally employed Private",
+      "No Income",
+      "Formally employed Government",
+      "Government Dependent",
+      "Dont Know/Refuse to answer"
+    ],
+    "age_group": [
+      "adult",
+      "mid_age",
+      "young",
+      "senior"
+    ],
+    "household_group": [
+      "medium",
+      "small",
+      "large",
+      "very_large"
+    ],
+    "country_has_phone": [
+      "Rwanda_Yes",
+      "Kenya_Yes",
+      "Tanzania_Yes",
+      "Tanzania_No",
+      "Rwanda_No",
+      "Uganda_Yes",
+      "Kenya_No",
+      "Uganda_No"
+    ],
+    "year_cat": [
+      "2016",
+      "2018",
+      "2017"
+    ]
+  },
+  "numeric_input_config": {
+    "year": {
+      "min": 2016.0,
+      "max": 2018.0,
+      "median": 2017.0
+    },
+    "household_size": {
+      "min": 1.0,
+      "max": 21.0,
+      "median": 3.0
+    },
+    "age_of_respondent": {
+      "min": 16.0,
+      "max": 100.0,
+      "median": 35.0
+    },
+    "urban_with_phone": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    "is_urban": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    "has_phone": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    "is_married": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    }
+  },
+  "decision_threshold": 0.6387755102040816,
+  "model_selection_metric": "pr_auc (primary), f1 (tie-breaker)",
+  "best_model": "Gradient Boosting",
+  "best_model_metrics": {
+    "pr_auc": 0.5957829621802548,
+    "f1": 0.5094798249878464,
+    "roc_auc": 0.875798534335949,
+    "recall": 0.7915407854984894,
+    "precision": 0.3756272401433692,
+    "accuracy": 0.785547290116897
+  }
+}
