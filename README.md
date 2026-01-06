@@ -1,4 +1,4 @@
-# Financial Inclusion — Streamlit App (Checkpoint)
+# Financial Inclusion: Streamlit App (Checkpoint)
 
 This repository contains:
 - `Financial_Inclusion_Checkpoint.ipynb` (training + evaluation notebook)
